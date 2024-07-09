@@ -1,1 +1,288 @@
 /* место для вашего кода */
+
+/* Работа выполнялась под ширину экрана 1100 и в режиме разработчика  Opera, Chrome демонстрируют небольшие отклонения от pixelPerfect, но вот вне режима разработчика всё выглядит печальнее*/
+
+
+/* Стили для Хедера */
+
+header {
+    font-size: 18px;
+    margin: 92px 50px;
+    display: grid;
+    grid-template-columns: 4fr  1fr 1.770fr 2.230fr; 
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}  
+
+.menu > ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    list-style-type: circle;
+    padding-right: 40px; 
+}
+
+.contacts > div {
+    margin: 2px 0;
+}
+
+.menu > ul > li> a {
+    border-bottom: none;
+} 
+
+.menu > ul > li:first-child {
+    list-style-type: none;
+}
+    
+.logo {
+    width: 140px;
+    height: 106px;
+}
+
+
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Стили для основного котейнера jambotron */
+
+.container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cover.jpg");
+    background-position:50% 50%;
+    background-size: cover;
+    width: 1100px;
+    height: 757px;
+    color: #fff;
+    margin-bottom: 178px;
+}
+
+.big_text {
+    margin: 50px 50px 128px 50px;
+    padding-top: 163px;
+    font-size: 100px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    letter-spacing: 1.9rem;
+}
+
+.special_symbol {
+    letter-spacing: 3.7rem;
+}
+
+.no_letter-spacing {
+    letter-spacing: 0;
+}
+
+.ono {
+   display: flex;
+   justify-content: flex-start;
+   margin-bottom: 10px ;
+}
+
+.tebe {
+    display: flex;
+   justify-content: center;
+   padding-right: 30px;
+}
+
+.nado {
+    display: flex;
+   justify-content: flex-end;
+}
+
+.subline {
+    text-transform: uppercase;
+}
+
+.slogan {
+    margin: 0 75px 0 78px;
+    display: inline;
+    word-spacing: 1.15rem;
+    font-size: 22px;
+}
+
+.button {
+    display: inline;
+}
+
+.button > a {
+    border-bottom: none;
+}
+
+button {
+    color: #fff;
+    background: none;
+    border: #fff;
+    font-size: 22px;
+    font-family: Raleway, sans-serif;
+    border: 10px solid transparent;
+    border: 2px solid #fff;
+    padding: 11px 32px;
+}
+
+
+
+/* Стили для divов с карточками лотов */
+
+.lots {
+margin: 25px 25px 161px 25px;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+}
+
+.lots > .caption {
+    padding-left: 40px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.lots > div > a {
+    margin-left: 40px;  
+    font-size: 20px;  
+    font-weight: 400; 
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    color: #fff;
+    margin: 27px 0px 30px 0px;
+}    
+
+.card {
+    padding: 51px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.card > .caption {
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/card-lot-01.jpg");
+    background-position:50% 50%;
+    background-size: cover;
+}
+
+
+.two {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/card-lot-02.jpg");
+    background-position:50% 50%;
+    background-size: cover;
+}
+
+.three {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/card-lot-03.jpg");
+    background-position:50% 50%;
+    background-size: cover;
+}
+
+.caption {
+    text-transform: uppercase;
+}
+
+
+/* Стили для Diva с информацией об аукционе */
+
+.about {
+    padding: 0px 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.7fr 1.3fr;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.about_title {
+    display: flex;
+    font-size: 40px;
+    font-weight: 700;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 30px 0 0 3px;
+}
+
+.about_text {
+    padding: 8px 0 0 3px;
+    word-spacing: 0.06rem;
+}
+.about_text :first-child {
+    margin-bottom: 22px;
+}
+
+.blackcircle {
+    background-color:black;
+    color:white;
+    width: 240px;
+    height: 240px;
+    border-radius:50%; 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 0px 31px;
+  }
+
+  .blackcircle > img {
+    padding: 46px;
+  }
+
+ 
+/* Стили для футера */
+
+
+footer {
+    margin: 112px 0 100px 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+footer > .contacts > div,adress {
+    margin: 0 0 4px 0;
+}
+
+footer > div {
+    flex-grow: 1;
+  flex-basis: 0;
+}
+
+.footer_menu {
+    text-align: center;
+}
+
+ .footer_menu > div > a:target {  /*вот тут я (собственно так же как и хедера) не понимаю как сделать, так чтобы ссылка на активную страницу имела иной стиль от других ссылок. visited не подойдёт - ибо прогулявшись по нескольким ссылкам со временем они все "перекрасятся", а для targeta нужно прописывать id. Пологаю, что без скриптов тут не осилить задачу. */
+    border-bottom: none;
+}                                 
+
+.social_media {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    justify-content: flex-end;
+}
+
+.social_media > div {
+    width: 48px;
+    height: 48px;
+   
+}
+
