@@ -28,7 +28,6 @@
       <a href="#">
         <img class="logo" src="./images/logo-black.svg" alt="Логотип">
       </a>
-      <div></div>   <!-- Этот div держит всю мою вёрстку на соплях. Ему задано значение (как грид-элементу) 1.770 фракции. При удалении всё посыпется. Я понимаю, что это не лучшее решение, но маржыны-падинги меня тут не слушаются,  а ничего умнее я не придумал. Пытался флекс-бокс, но получается только симметрично, а тут нужно два ассимитричных элемента. Подскажите красивое решение - я переделаю. -->
       <address class="contacts">
           <a href="tel:+99995555555">+9 999 555 5555</a>     
           <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
@@ -46,49 +45,57 @@
         <span class="caption aligned-text_right"><span class="letter-spacing-extended">Н</span>ад<span class="no-letter-spacing">о</span></span>
       </h1>
       <div class="subline">
-        <h4 class="slogan">Аукцион вещей, в которые никто не верил</h4>
-        <form style="display: inline" action="#" method="get" class="button">
-          <button>СДЕЛАТЬ СТАВКУ</button>
-        </form>
+        <h2 class="slogan">Аукцион вещей, в которые никто не верил</h2>
+          <button class="button">СДЕЛАТЬ СТАВКУ</button>
       </div>
     </section>
 
     <section class="lots">
       <h2 class="caption">Лоты</h2>
-      <div class="lots__cards-list">
-        <a href="#" class="card-link card_type_film">
-          <article class="card">
-            <div class="overlay"></div>
-            <h3 class="card__title caption">Фильм режиссёра, который бросил киношколу</h3>
-            <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, 
-              если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
-          </article>
-        </a>
+      <ul class="lots__cards-list">
+        <li class="lots__card-list-item">
+          <a href="#" class="card-link">
+            <article class="card card_type_film">
+              <div class="overlay"></div>
+              <h3 class="card__title caption">Фильм режиссёра, который бросил киношколу</h3>
+              <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, 
+                если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+            </article>
+          </a>
+        </li>
 
-        <a href="#" class="card-link card_type_book">
-          <article class="card">
-            <div class="overlay"></div>
-            <h3 class="card__title caption">Книга, где описан один скучный день из жизни рекламного агента</h3>
-            <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-          </article>
-        </a>
+        <li class="lots__card-list-item">
+          <a href="#" class="card-link">
+            <article class="card card_type_book">
+              <div class="overlay"></div>
+              <h3 class="card__title caption">Книга, где описан один скучный день из жизни рекламного агента</h3>
+              <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. 
+                В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. 
+                И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+            </article>
+          </a>
+        </li>
 
-        <a href="#" class="card-link card_type_picture">
-          <article class="card">
-            <div class="overlay"></div>
-            <h3 class="card__title caption">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
-            <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
-          </article>
-        </a>
-      </div>
+        <li class="lots__card-list-item">
+          <a href="#" class="card-link">
+            <article class="card card_type_picture">
+              <div class="overlay"></div>
+              <h3 class="card__title caption">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+              <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... 
+              Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+            </article>
+          </a>
+        </li>
+      </ul>
       <a  href="#">посмотреть больше</a>
-
+        
     </section>
 
     <section class="about">
       <div class="about__logo"> <img src="./images/logo-white.svg" alt="Логотип"></div>
+      <div>
       <h2 class="about_title">Об аукционе</h2>
-      <div> </div>
+     
       <div class="about_text"> 
         <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. 
           Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
@@ -96,6 +103,8 @@
           Когда-то они казались просто неудачными. Но, несмотря
           на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, 
           продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
+      </div>      
+          
       </div>
     </section>
   </main>
@@ -122,11 +131,17 @@
         </ul>
       </nav>
     
-      <div class="social_media">
-        <a href="#"><img src="./images/yt.svg" alt="Логотип Ютуб"></a>
-        <a href="#"><img src="./images/vk.svg" alt="Логотип на ВКонтакте"></a>
-        <a href="#"><img src="./images/pinterest.svg" alt="Логотип pinterest"></a>
-      </div>
+      <ul class="social_media">
+        <li class="icon">
+          <a href="#"><img src="./images/yt.svg" alt="Логотип Ютуб"></a>
+        </li>
+        <li class="icon">
+          <a href="#"><img src="./images/vk.svg" alt="Логотип на ВКонтакте"></a>
+        </li>
+        <li class="icon">
+          <a href="#"><img src="./images/pinterest.svg" alt="Логотип pinterest"></a>
+        </li>
+      </ul>
   </footer>
 </body>
 </html>
