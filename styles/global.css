@@ -25,13 +25,9 @@ blockquote {
   padding: 0;
 }
 
-a {
+ a {
   color: inherit;
-  border-bottom: 2px solid black;
-  padding-bottom: 0px;
-  text-decoration: none;
-
-}
+} 
 
 img {
   width: 100%;
